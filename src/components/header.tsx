@@ -21,17 +21,27 @@ const HeaderContainer = styled.header`
     padding: 0 1rem;
     font-size: 2rem;
     font-weight: 700;
+
+    @media (max-width: 700px) {
+      padding: 1rem 0;
+    }
   }
 
-  .menu ul {
-    display: flex;
-    align-items: center;
+  .menu {
+    @media (max-width: 700px) {
+      display: none;
+    }
 
-    li a {
-      display: block;
-      font-size: 1.25rem;
-      font-weight: 500;
-      padding: 1.5rem 1rem;
+    ul {
+      display: flex;
+      align-items: center;
+
+      li a {
+        display: block;
+        font-size: 1.25rem;
+        font-weight: 500;
+        padding: 1.5rem 1rem;
+      }
     }
   }
 `

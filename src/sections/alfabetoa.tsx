@@ -12,11 +12,19 @@ const AlfabetoaSection = styled.section`
 
   padding-bottom: 2rem;
 
+  @media (max-width: 700px) {
+    width: 90%;
+  }
+
   h2 {
     font-size: 2.5rem;
     font-weight: 500;
     text-align: center;
     padding: 2rem;
+
+    @media (max-width: 700px) {
+      padding: 1rem;
+    }
   }
 
   table {
@@ -27,10 +35,6 @@ const AlfabetoaSection = styled.section`
       tr:hover {
         background: #f0f0f0;
       }
-    }
-
-    th {
-      width: 33.33%;
     }
 
     th,
@@ -56,6 +60,13 @@ const AlfabetoaSection = styled.section`
       }
 
       &.txikia {
+        font-size: 1.25rem;
+      }
+    }
+
+    th {
+      width: 33.33%;
+      @media (max-width: 700px) {
         font-size: 1.25rem;
       }
     }

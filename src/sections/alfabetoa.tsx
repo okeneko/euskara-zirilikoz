@@ -105,7 +105,7 @@ export const Alfabetoa = () => {
         <thead>
           <tr>
             <th colSpan={2}>
-              <LZ l="Zirilikoa" z="Зирилилкоа" />
+              <LZ l="Zirilikoa" z="Зириликоа" />
             </th>
             <th>
               <LZ l="Izena" z="Изена" />

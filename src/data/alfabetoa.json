@@ -1,0 +1,147 @@
+[
+  {
+    "izena": "a",
+    "latindarra": "a",
+    "zirilikoa": "а"
+  },
+  {
+    "izena": "be",
+    "latindarra": "b",
+    "zirilikoa": "б"
+  },
+  {
+    "izena": "de",
+    "latindarra": "d",
+    "zirilikoa": "д"
+  },
+  {
+    "izena": "e",
+    "latindarra": "e",
+    "zirilikoa": "е"
+  },
+  {
+    "izena": "efe",
+    "latindarra": "f",
+    "zirilikoa": "ф"
+  },
+  {
+    "izena": "ge",
+    "latindarra": "g",
+    "zirilikoa": "г"
+  },
+  {
+    "izena": "i",
+    "latindarra": "i",
+    "zirilikoa": "и"
+  },
+  {
+    "izena": "jota",
+    "latindarra": "j",
+    "zirilikoa": "ј"
+  },
+  {
+    "izena": "ka",
+    "latindarra": "k",
+    "zirilikoa": "к"
+  },
+  {
+    "izena": "ele",
+    "latindarra": "l",
+    "zirilikoa": "л"
+  },
+  {
+    "izena": "eme",
+    "latindarra": "m",
+    "zirilikoa": "м"
+  },
+  {
+    "izena": "ene",
+    "latindarra": "n",
+    "zirilikoa": "н"
+  },
+  {
+    "izena": "eñe",
+    "latindarra": "ñ",
+    "zirilikoa": "њ"
+  },
+  {
+    "izena": "o",
+    "latindarra": "o",
+    "zirilikoa": "о"
+  },
+  {
+    "izena": "pe",
+    "latindarra": "p",
+    "zirilikoa": "п"
+  },
+  {
+    "izena": "erre",
+    "latindarra": "r",
+    "zirilikoa": "р"
+  },
+  {
+    "izena": "ese",
+    "latindarra": "s",
+    "zirilikoa": "с"
+  },
+  {
+    "izena": "te",
+    "latindarra": "t",
+    "zirilikoa": "т"
+  },
+  {
+    "izena": "tze",
+    "latindarra":  "tz",
+    "zirilikoa": "ц"
+  },
+  {
+    "izena": "txe",
+    "latindarra":  "tx",
+    "zirilikoa": "ч"
+  },
+  {
+    "izena": "tse",
+    "latindarra":  "ts",
+    "zirilikoa": "ћ"
+  },
+  {
+    "izena": "u",
+    "latindarra": "u",
+    "zirilikoa": "у"
+  },
+  {
+    "izena": "u motza",
+    "latindarra": "w",
+    "zirilikoa": "ў"
+  },
+  {
+    "izena": "uve",
+    "latindarra": "v",
+    "zirilikoa": "в"
+  },
+  {
+    "izena": "ixa",
+    "latindarra": "h",
+    "zirilikoa": "х"
+  },
+  {
+    "izena": "xa",
+    "latindarra": "x",
+    "zirilikoa": "ш"
+  },
+  {
+    "izena": "i motza",
+    "latindarra": "y",
+    "zirilikoa": "й"
+  },
+  {
+    "izena": "ia",
+    "latindarra":  "ia",
+    "zirilikoa": "я"
+  },
+  {
+    "izena": "zeta",
+    "latindarra": "z",
+    "zirilikoa": "з"
+  }
+]

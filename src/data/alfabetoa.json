@@ -50,6 +50,11 @@
     "zirilikoa": "л"
   },
   {
+    "izena": "elle",
+    "latindarra": "ll",
+    "zirilikoa": "љ"
+  },
+  {
     "izena": "eme",
     "latindarra": "m",
     "zirilikoa": "м"
@@ -91,17 +96,17 @@
   },
   {
     "izena": "tze",
-    "latindarra":  "tz",
+    "latindarra": "tz",
     "zirilikoa": "ц"
   },
   {
     "izena": "txe",
-    "latindarra":  "tx",
+    "latindarra": "tx",
     "zirilikoa": "ч"
   },
   {
     "izena": "tse",
-    "latindarra":  "ts",
+    "latindarra": "ts",
     "zirilikoa": "ћ"
   },
   {
@@ -133,11 +138,6 @@
     "izena": "i motza",
     "latindarra": "y",
     "zirilikoa": "й"
-  },
-  {
-    "izena": "ia",
-    "latindarra":  "ia",
-    "zirilikoa": "я"
   },
   {
     "izena": "zeta",

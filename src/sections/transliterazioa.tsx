@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import { LZ } from '../components/lz'
-import { letters, transliterate } from '../services/transliterate'
+import { useStaticQuery, graphql } from 'gatsby'
 
 const TransliterazioaSection = styled.section`
   width: 80%;
@@ -36,7 +36,6 @@ const TextArea = styled.textarea`
   background: transparent;
   padding: 1rem;
   border: 2px solid #101010;
-  /* border-radius: 1rem; */
   outline: none;
 
   &:hover {
@@ -45,6 +44,66 @@ const TextArea = styled.textarea`
 `
 
 export const Transliterazioa = () => {
+  const data = useStaticQuery(graphql`
+    query transliterazioAlfabetoa {
+      allAlfabetoaJson {
+        edges {
+          node {
+            id
+            izena
+            latindarra
+            zirilikoa
+          }
+        }
+      }
+    }
+  `)
+
+  const { edges } = data.allAlfabetoaJson
+
+  const letters = edges.reduce((result, letter) => {
+    result[letter.node.latindarra] = letter.node.zirilikoa
+    return result
+  })
+
+  const fetchLetter = (input: string) => {
+    const cyrillic = letters[input.toLowerCase()]
+    const letter = input.slice(0, 1)
+    if (letter === letter.toUpperCase()) return cyrillic.toUpperCase()
+    return cyrillic
+  }
+
+  const transliterate = (word: string): string => {
+    return word.split('').reduce((result, letter, i, word) => {
+      if (!!letter.toLowerCase() && !!letters[letter.toLowerCase()]) {
+        const prev = word[i - 1]
+        if (!!prev && (prev === 't' || prev === 'T' || prev === 'т' || prev === 'Т')) {
+          if (
+            letter.toLowerCase() === 'x' ||
+            letter.toLowerCase() === 'z' ||
+            letter.toLowerCase() === 's'
+          ) {
+            let latinT = prev
+            if (prev === 'т') latinT = 't'
+            if (prev === 'Т') latinT = 'T'
+            return result.slice(0, -1) + fetchLetter(latinT + letter)
+          }
+        }
+        if (!!prev && (prev === 'l' || prev === 'L' || prev === 'л' || prev === 'Л')) {
+          let latinL = prev
+          if (prev === 'л') latinL = 'l'
+          if (prev === 'Л') latinL = 'L'
+          if (letter.toLowerCase() === 'l')
+            return result.slice(0, -1) + fetchLetter(latinL + letter)
+        }
+
+        return result + fetchLetter(letter)
+      }
+
+      return result + letter
+    }, '')
+  }
+
   const [input, setInput] = useState('')
   return (
     <TransliterazioaSection id="transliterazioa">

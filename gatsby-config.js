@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Euskara Zirilikoz`,
+    description: `How I see the Basque alphabet if it was written in cyrillic.`,
+    author: `@okeneko`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -35,7 +35,7 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['IBM Plex Mono:400,500,700', 'Roboto Mono:400,500,700'],
+          families: ['Fira Sans:400,500,700', 'Fira Mono:400,500,700', 'Roboto Mono:400,500,700'],
         },
       },
     },

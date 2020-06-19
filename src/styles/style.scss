@@ -1,71 +1,71 @@
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-}
+// *,
+// *::before,
+// *::after {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+//   list-style: none;
+// }
 
-body {
-  background: #fbfbfb;
-  color: #101010;
-  font-family: 'IBM Plex Mono', 'Roboto Mono', monospace;
-}
+// body {
+//   background: #fbfbfb;
+//   color: #101010;
+//   font-family: 'Fira Mono', 'Roboto Mono', monospace;
+// }
 
-a {
-  text-decoration: none;
-  color: #101010;
-}
+// a {
+//   text-decoration: none;
+//   color: #101010;
+// }
 
-.hover-lz {
-  .z {
-    display: none;
-  }
+// .hover-lz {
+//   .z {
+//     display: none;
+//   }
 
-  &:hover {
-    .l {
-      display: none;
-    }
+//   &:hover {
+//     .l {
+//       display: none;
+//     }
 
-    .z {
-      display: block;
-    }
-  }
-}
+//     .z {
+//       display: block;
+//     }
+//   }
+// }
 
-header {
-  .header-wrap {
-    height: 100%;
-    width: 90%;
-    margin: auto;
-    border-bottom: 2px solid #101010;
+// header {
+//   .header-wrap {
+//     height: 100%;
+//     width: 90%;
+//     margin: auto;
+//     border-bottom: 2px solid #101010;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//   }
 
-  h1 {
-    padding: 0 1rem;
-    font-size: 2rem;
-    font-weight: 700;
-  }
+//   h1 {
+//     padding: 0 1rem;
+//     font-size: 2rem;
+//     font-weight: 700;
+//   }
 
-  .menu ul {
-    display: flex;
-    align-items: center;
+//   .menu ul {
+//     display: flex;
+//     align-items: center;
 
-    li a {
-      display: block;
-      font-size: 1.25rem;
-      font-weight: 500;
-      padding: 1.5rem 1rem;
-    }
-  }
-}
+//     li a {
+//       display: block;
+//       font-size: 1.25rem;
+//       font-weight: 500;
+//       padding: 1.5rem 1rem;
+//     }
+//   }
+// }
 
-main {
-  width: 90%;
-  margin: auto;
-}
+// main {
+//   width: 90%;
+//   margin: auto;
+// }

@@ -3,6 +3,7 @@ import { createGlobalStyle } from 'styled-components'
 import { Helmet } from 'react-helmet'
 
 import { Header } from '../components/header'
+import { Transliterazioa } from '../sections/transliterazioa'
 import { Alfabetoa } from '../sections/alfabetoa'
 import { Footer } from '../components/footer'
 
@@ -23,7 +24,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     background: #fbfbfb;
     color: #101010;
-    font-family: 'IBM Plex Mono', 'Roboto Mono', monospace;
+    font-family: 'Fira Mono', 'Roboto Mono', monospace;
   }
 
   a {
@@ -39,8 +40,8 @@ const Index = () => (
     </Helmet>
     <GlobalStyle />
     <Header />
+    <Transliterazioa />
     <Alfabetoa />
-    {/* <Transliterazioa /> */}
     <Footer />
   </>
 )

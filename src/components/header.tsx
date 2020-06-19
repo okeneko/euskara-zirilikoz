@@ -56,11 +56,11 @@ export const Header = () => {
         <nav className="menu">
           <ul>
             <li>
-              <LZ href="#" l="Alfabetoa" z="Алфабетоа" />
-            </li>
-            {/* <li>
               <LZ href="#transliterazioa" l="Transliterazioa" z="Транслитеразиоа" />
-            </li> */}
+            </li>
+            <li>
+              <LZ href="#alfabetoa" l="Alfabetoa" z="Алфабетоа" />
+            </li>
           </ul>
         </nav>
       </div>

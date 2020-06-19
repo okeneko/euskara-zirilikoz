@@ -10,7 +10,7 @@ const AlfabetoaSection = styled.section`
   justify-content: center;
   flex-direction: column;
 
-  padding-bottom: 2rem;
+  padding: 4rem 0;
 
   @media (max-width: 700px) {
     width: 90%;
@@ -18,7 +18,7 @@ const AlfabetoaSection = styled.section`
 
   h2 {
     font-size: 2.5rem;
-    font-weight: 500;
+    font-weight: 700;
     text-align: center;
     padding: 2rem;
 
@@ -108,7 +108,7 @@ export const Alfabetoa = () => {
   const { edges } = data.allAlfabetoaJson
 
   return (
-    <AlfabetoaSection>
+    <AlfabetoaSection id="alfabetoa">
       <h2>
         <LZ l="Alfabetoa" z="Алфабетоа" />
       </h2>
